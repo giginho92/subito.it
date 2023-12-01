@@ -25,6 +25,8 @@ class="p-5 text-center bg-image"
 style="
 background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
 height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
 "
 >
 <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">

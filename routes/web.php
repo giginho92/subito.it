@@ -17,6 +17,8 @@ use App\Http\Controllers\AnnouncementsController;
 
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
 
+ 
+//ROTTE ANNUNCI
 Route::get('/announcements/create', [AnnouncementsController::class, 'announcements_create'])->name('announcements_create');
 Route::post('/announcements/store', [AnnouncementsController::class, 'announcements_store'])->name('announcements_store');
 Route::get('/announcements/show', [AnnouncementsController::class, 'announcements_show'])->name('announcements_show');

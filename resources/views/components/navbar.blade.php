@@ -18,11 +18,25 @@
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active">Log-in</a>
+                    <a class="nav-link active" href="{{route('login')}}">Log-in</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{route('register')}}">Registrati</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <form method="POST" action="/logout">
+                        @csrf
+                        <button class="nav-link" type="submit">Logout</button>
+                    </form>
+                    
                 </li>
             </ul>
             
             
         </div>
-    </div>
+    </div>                                                                                                          
 </nav>

@@ -26,5 +26,17 @@ class AnnouncementsRequest extends FormRequest
             'price'=>'required',
             'category'=>'required',
         ];
+
+
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required'=>'Questo campo è obbligatorio',
+            'name.min'=>'Il nome deve contenere minmo 5 caratteri',
+            'price.required'=>'Questo campo è obbligatorio',
+            'category.required'=>'Questo campo è obbligatorio',
+        ];
     }
 }

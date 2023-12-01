@@ -12,5 +12,6 @@ class Announcement extends Model
         'name',
         'price',
         'category',
+        'img'
     ];
 }
